@@ -15,18 +15,13 @@ public class BackupFile {
             backupFol.mkdir();
         }
         String fileName = file.getName();
-        int index = fileName.lastIndexOf('.');
-        if (index > 0) {
-            String Extension = fileName.substring(0, index);
-            Path source = file.toPath();
-            Path target = Paths.get(backupFol.getPath() + File.separator + Extension + ".bak");
-            try {
-                Files.copy(source, target, StandardCopyOption.REPLACE_EXISTING);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+        String Extension = fileName;
+        Path source = file.toPath();
+        Path target = Paths.get(backupFol.getPath() + File.separator + Extension);
+        try {
+            Files.copy(source, target, StandardCopyOption.REPLACE_EXISTING);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-
     }
-
 }
