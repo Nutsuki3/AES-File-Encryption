@@ -266,7 +266,7 @@ public class Validate {
                             } else if (pass.length != 16) {
                                 System.out.println("\n\u001B[31mPassword must be 16 characters\u001B[0m\n");
                                 return;
-                            } else if (iv.length != 16) {
+                            } else if (iv.length != 12) {
                                 System.out.println("\n\u001B[31miv must be 12 characters\u001B[0m\n");
                                 return;
                             }
