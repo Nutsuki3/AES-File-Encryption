@@ -50,7 +50,7 @@ public class Main {
                     while (true) {
                         for (String keys: key_size) {
                             System.out.println("Type " + keys +
-                                    " and select the desired cipher to encrypt with AES 128 and the mode of your choice.");
+                                    " and select the desired cipher mode to encrypt with AES " + keys + " and the mode of your choice.");
                         }
                         System.out.println("Mode ECB, CBC, GCM");
                         System.out.println("Example  " + "\"" + AES[0] + "\"");
