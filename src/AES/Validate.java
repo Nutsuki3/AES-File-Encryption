@@ -23,8 +23,13 @@ public class Validate {
             if (files.exists()) {
                 if (files.isDirectory()) {
                     File[] folder = files.listFiles();
+                    if (folder == null || folder.length == 0) {
+                        System.out.println("\n\u001B[31mFile not found in folder at>>> \u001B[0m" + files + "\n");
+                        return;
+                    }
                     for (File folders: Objects.requireNonNull(folder)) {
                         files = new File(folders.getAbsolutePath());
+                        
                         if (buf.equalsIgnoreCase("y")) {
                             BackupFile.backup(files);
                         }
@@ -128,7 +133,7 @@ public class Validate {
                                 } else if (pass.length != 16) {
                                     System.out.println("\n\u001B[31mPassword must be 16 characters\u001B[0m\n");
                                     return;
-                                } else if (iv.length != 16) {
+                                } else if (iv.length != 12) {
                                     System.out.println("\n\u001B[31miv must be 12 characters\u001B[0m\n");
                                     return;
                                 }
