@@ -2,8 +2,6 @@
 
 This is a Java program that can be used to encrypt and decrypt files using the Advanced Encryption Standard (AES) algorithm. This program supports AES 128, 192, and 256-bit encryption with ECB, CBC, and GCM block modes.
 
-
-
 ## Prerequisites
 
 Before using this program, you will need to have the following software installed on your system:
@@ -22,13 +20,11 @@ You can encrypt with the following modes :
 - [**Cipher Block Chaining (CBC)**](https://www.educative.io/answers/what-is-cbc)
 - [**Galios/Counter Mode (GCM)**](https://en.wikipedia.org/wiki/Galois/Counter_Mode)
 
-And iterate encryption, yes you can iterate your file encryption but to decrypt the file depends on the number of times you encrypt it. If you are worried that your files will be damaged, you can choose to use the Backup function.
+And iterate encryption, Yes! you can iterate your file encryption but to decrypt the file depends on the number of times you encrypt it. If you are worried that your files will be damaged, you can choose to use the Backup function.
+![enter image description here](https://media.tenor.com/fxuUKyzBcG8AAAAC/anime-wow.gif)
 
 ## Security
 
 Please note that to encrypt and decrypt data using AES, it is important to use strong encryption keys and choose best practices for handling sensitive data.
 
-
-
-
-
+![enter image description here](https://media.tenor.com/NhJQeueIiKwAAAAC/anime-thumbs.gif)
