@@ -30,9 +30,9 @@ public class Encrypt_Decrypt {
             cipher.init(Cipher.ENCRYPT_MODE, secretKey, paramSpec);
             byte[] encrypt = cipher.doFinal(file);
             Files.write(infile.toPath(), encrypt);
-            System.out.println("\n" + infile + " \u001B[32malready encrypted ✔\u001B[0m\n");
+            System.out.println("\n" + infile + " \u001B[32malready encrypted\u001B[0m\n");
            } catch (Exception e) {
-            System.out.println("\n" + infile + " \u001B[31mis not encrypted ✘\u001B[0m\n");
+            System.out.println("\n" + infile + " \u001B[31mis not encrypted\u001B[0m\n");
         }
     }
 
@@ -55,9 +55,9 @@ public class Encrypt_Decrypt {
             cipher.init(Cipher.DECRYPT_MODE, secretKey, paramSpec);
             byte[] decrypt = cipher.doFinal(file);
             Files.write(infile.toPath(), decrypt);
-            System.out.println("\n" + Validate.path + " \u001B[32malready decrypted ✔\u001B[0m\n");
+            System.out.println("\n" + Validate.path + " \u001B[32malready decrypted\u001B[0m\n");
         } catch (Exception e) {
-            System.out.println("\n" + Validate.path + " \u001B[31mis not decrypted ✘\u001B[0m\n");
+            System.out.println("\n" + Validate.path + " \u001B[31mis not decrypted\u001B[0m\n");
         }
     }
 }
