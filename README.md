@@ -22,10 +22,6 @@ You can encrypt with the following modes :
 
 And iterate encryption, Yes! you can iterate your file encryption but to decrypt the file depends on the number of times you encrypt it. If you are worried that your files will be damaged, you can choose to use the Backup function.
 
-![enter image description here](https://media.tenor.com/fxuUKyzBcG8AAAAC/anime-wow.gif)
-
 ## Security
 
 Please note that to encrypt and decrypt data using AES, it is important to use strong encryption keys and choose best practices for handling sensitive data.
-
-![enter image description here](https://media.tenor.com/NhJQeueIiKwAAAAC/anime-thumbs.gif)
